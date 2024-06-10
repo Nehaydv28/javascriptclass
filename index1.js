@@ -34,7 +34,7 @@
 // })()
 
 
-const obj = {"key":"val","first name":"niaa"}
+// const obj = {"key":"val","first name":"niaa"}
 
-console.log(obj["key"])
-console.log(obj["first name"]);
+// console.log(obj["key"])
+// console.log(obj["first name"]);
