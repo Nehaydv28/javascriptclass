@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* .maindiv{
+            border: 2px solid black;
+        } */
+        table,
+        td{
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div class="maindiv">
+        <div>
+            <p id="result">hiee</p>
+        </div>
+        <div>
+            <table>
+              <tr> 
+                <td><button value="+" onclick="add()">+</button></td>
+                <td><button>-</button></td>
+                <td><button>*</button></td>
+                <td><button>/</button></td>
+              </tr>
+              <tr>
+                <td><button>7</button></td>
+                <td><button>8</button></td>
+                <td><button>9</button></td>
+                <td rowspan="4"><button>=</button></td>
+              </tr>
+              <tr>
+                <td><button>4</button></td>
+                <td><button>5</button></td>
+                <td><button>6</button></td>
+              </tr>
+              <tr>
+                <td><button>1</button></td>
+                <td><button value="2" onclick="two()">2</button></td>
+                <td><button>3</button></td>
+              </tr>
+              <tr>
+                <td><button>0</button></td>
+                <td><button>.</button></td>
+                <td><button>c</button></td>
+              </tr>
+            </table>
+        </div>
+    </div>
+    <script> 
+        let result = 10;
+        document.getElementById("result").innerText=result;
+        let additionSign = document.getElementsByTagName('button')[0].value
+        let twoSign = document.getElementsByTagName('button')[12].value
+        function two(){
+            result+=twoSign;
+        }
+        function add(){
+            result+=additionsign;
+        }
+    </script>
+</body>
+</html>
